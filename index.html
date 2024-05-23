@@ -1,0 +1,1874 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Portal de videojuegos con noticias y blogs" />
+
+	<!-- Fuentes -->
+	<link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.5.2-web/css/all.min.css" />
+	<link rel="stylesheet" href="./assets/fonts/montserrat/montserrat.css" />
+
+	<!-- ESTILOS -->
+	<link rel="stylesheet" href="./assets/css/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./assets/css/scss/main.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+	<!-- SCRIPTS -->
+	<script src="./assets/JS/swipper.js" defer></script>
+	<script src="./assets/JS/observer.js" defer></script>
+	<script src="./assets/JS/main.js" defer></script>
+	<script src="./assets/JS/marquee.js"></script>
+	<script src="./assets/JS/menu.js"></script>
+
+	<title>Portal de Videojuegos</title>
+</head>
+
+<body>
+	<!-- Barra superior decorativa -->
+	<div class="top-bar"></div>
+
+	<!-- Estructura principal -->
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-2 my-4">
+					<a class="navbar-brand" href="#"><img src="./assets/img/logo1.png" alt="Logo principal" /></a>
+				</div>
+			</div>
+		</div>
+		<!-- Navegación -->
+		<div class="container position-relative">
+			<div class="row">
+				<div class="col-12">
+					<nav
+						class="nav-navbar bg-navbar d-flex flex-row justify-content-between align-items-center position-relative">
+						<!-- Boton menu responsive -->
+						<div class="navbar-mobile-btn d-block d-lg-none">
+							<i class="fas fa-bars mt-2"></i>
+						</div>
+						<!-- menu responsive -->
+						<ul class="navbar-mobile-list d-lg-none">
+							<!-- Elemento con submenu -->
+							<li class="mobile-list-item">
+								<div class="mobile-container">
+									<a href="#news" class="mobile-link">NOTICIAS</a>
+									<div id="icon1" class="mobile-icon">
+										<i class="fas fa-chevron-down"></i>
+									</div>
+								</div>
+								<ul class="mobile-list-submenu" id="submenu1">
+									<li class="msubmenu-item">
+										<a href="#" class="msubmenu-link">VIDEOJUEGOS</a>
+									</li>
+									<li class="msubmenu-item">
+										<a href="#" class="msubmenu-link">CINE</a>
+									</li>
+									<li class="msubmenu-item">
+										<a href="#" class="msubmenu-link">TECNOLOGÍA</a>
+									</li>
+								</ul>
+							</li>
+							<!-- Elemento simple -->
+							<li class="mobile-list-item">
+								<a href="#" class="mobile-link">ANÁLISIS</a>
+							</li>
+							<li class="mobile-list-item">
+								<a href="#games" class="mobile-link">JUEGOS</a>
+							</li>
+							<li class="mobile-list-item">
+								<div class="mobile-container">
+									<a href="#category" class="mobile-link">CATEGORIAS</a>
+									<div id="icon2" class="mobile-icon">
+										<i class="fas fa-chevron-down"></i>
+									</div>
+								</div>
+								<ul class="mobile-list-submenu" id="submenu2">
+									<li class="msubmenu-item">
+										<a href="#" class="msubmenu-link">Accion</a>
+									</li>
+									<li class="msubmenu-item">
+										<a href="#" class="msubmenu-link">Sandbox</a>
+									</li>
+									<li class="msubmenu-item">
+										<a href="#" class="msubmenu-link">Lucha</a>
+									</li>
+									<li class="msubmenu-item">
+										<a href="#" class="msubmenu-link">Carreras</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mobile-list-item">
+								<a href="#ranking" class="mobile-link">RANKING</a>
+							</li>
+						</ul>
+						<!-- Navegación escritorio -->
+						<ul class="navbar-list d-none d-lg-flex flex-row my-auto overflow-x-hidden">
+							<li class="navbar-item ">
+								<a href="#news" class="navbar-link">
+									NOTICIAS
+								</a>
+
+								<div class="navbar-submenu">
+									<!-- Lista desplegable -->
+									<ul class="navbar-sublist">
+										<li class="sublist-item">
+											<a href="#" class="sublist-link">Videojuegos</a>
+										</li>
+										<li class="sublist-item">
+											<a href="#" class="sublist-link">Novedades</a>
+										</li>
+										<li class="sublist-item">
+											<a href="#" class="sublist-link">Otros</a>
+
+											<ul class="sublist-dropdown">
+												<li class="dropdown-item">
+													<a href="#" class="dropdown-link">Cine</a>
+												</li>
+												<li class="dropdown-item">
+													<a href="#" class="dropdown-link">Tecnología</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+
+									<!-- Carousel de imágenes -->
+
+									<div class="submenu-carousel">
+										<ul class="carousel-menu carousel-menu-small">
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-1.jpg"
+														alt="imagen submenu">
+												</div>
+												<!-- Puntuación -->
+												<div class="carousel-rating">
+													<div class="container-rating">
+														<div class="container-border">
+															<span class="container-mark">9</span>
+														</div>
+													</div>
+												</div>
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link"
+															href="#">¿Battlefield 2042 es el mejor de la saga?</a></h3>
+												</div>
+											</li>
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-2.webp"
+														alt="imagen submenu">
+												</div>
+
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link" href="#">¿Elden
+															Ring es el mejor juego del año?</a></h3>
+												</div>
+											</li>
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-3.jpg"
+														alt="imagen submenu">
+												</div>
+
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link" href="#">¿The
+															Last of Us 1 Remake es mejor que el original?</a></h3>
+												</div>
+											</li>
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-4.jpg"
+														alt="imagen submenu">
+												</div>
+
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link" href="#">Review
+															de Dying Light 2</a></h3>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="navbar-item">
+								<a href="#reviews" class="navbar-link">
+									ANÁLISIS
+								</a>
+
+								<div class="navbar-submenu">
+									<div class="submenu-carousel">
+										<ul class="carousel-menu">
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-5 (1).jpg"
+														alt="imagen submenu">
+												</div>
+												<!-- Puntuación -->
+												<div class="carousel-rating">
+													<div class="container-rating">
+														<div class="container-border">
+															<span class="container-mark">7.5</span>
+														</div>
+													</div>
+												</div>
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link" href="#">¿Sifu
+															es el juego de peleas mas difícil?</a></h3>
+												</div>
+											</li>
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-6.jpg"
+														alt="imagen submenu">
+												</div>
+												<!-- Puntuación -->
+												<div class="carousel-rating">
+													<div class="container-rating">
+														<div class="container-border">
+															<span class="container-mark">6</span>
+														</div>
+													</div>
+												</div>
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link" href="#">Trailer
+															FC24</a></h3>
+												</div>
+											</li>
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-7.png"
+														alt="imagen submenu">
+												</div>
+												<!-- Puntuación -->
+												<div class="carousel-rating">
+													<div class="container-rating">
+														<div class="container-border">
+															<span class="container-mark">8</span>
+														</div>
+													</div>
+												</div>
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link"
+															href="#">¿Multiversus es mejor que Super Smash Bros?</a>
+													</h3>
+												</div>
+											</li>
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-8.jpg"
+														alt="imagen submenu">
+												</div>
+
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link" href="#">Review
+															de Gran Turismo 7</a></h3>
+												</div>
+											</li>
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-9.webp"
+														alt="imagen submenu">
+												</div>
+
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link"
+															href="#">Detalles alucinantes de Forza Horizon 5</a></h3>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="navbar-item">
+								<a href="#games" class="navbar-link">
+									JUEGOS
+								</a>
+								<div class="navbar-submenu">
+									<div class="submenu-carousel">
+										<ul class="carousel-menu">
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-10.jpg"
+														alt="imagen submenu">
+												</div>
+
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link" href="#">Review
+															Ratchet & Clank</a></h3>
+												</div>
+											</li>
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-19.jpg"
+														alt="imagen submenu">
+												</div>
+
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link"
+															href="#">Valorant es mejor que CS:GO</a></h3>
+												</div>
+											</li>
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-11.jpg"
+														alt="imagen submenu">
+												</div>
+
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link" href="#">¿Farcry
+															6 es el mejor de la saga?</a>
+													</h3>
+												</div>
+											</li>
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-12.jpg"
+														alt="imagen submenu">
+												</div>
+
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link"
+															href="#">Gameplay de Resident Evil Village</a></h3>
+												</div>
+											</li>
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-13.jpg"
+														alt="imagen submenu">
+												</div>
+
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link" href="#">Its
+															Take Two fue el mejor juego del año</a></h3>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="navbar-item">
+								<a href="#category" class="navbar-link">
+									CATEGORÍAS
+								</a>
+
+								<div class="navbar-submenu navbar-submenu-small">
+									<ul class="navbar-sublist">
+										<li class="sublist-item">
+											<a href="#" class="sublist-link">Acción</a>
+										</li>
+										<li class="sublist-item">
+											<a href="#" class="sublist-link">Sandbox</a>
+											<ul class="sublist-dropdown">
+												<li class="dropdown-item">
+													<a href="#" class="dropdown-link">Supervicencia</a>
+												</li>
+												<li class="dropdown-item">
+													<a href="#" class="dropdown-link">Aventuras</a>
+												</li>
+											</ul>
+										</li>
+										<li class="sublist-item">
+											<a href="#" class="sublist-link">Lucha</a>
+										</li>
+										<li class="sublist-item">
+											<a href="#" class="sublist-link">Carreras</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="navbar-item">
+								<a href="#ranking" class="navbar-link">
+									RANKING
+								</a>
+								<div class="navbar-submenu">
+									<div class="submenu-carousel">
+										<ul class="carousel-menu">
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-14.jpeg"
+														alt="imagen submenu">
+												</div>
+
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link" href="#">Trailer
+															Biomutant</a></h3>
+												</div>
+											</li>
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-15.jpg"
+														alt="imagen submenu">
+												</div>
+
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link"
+															href="#">Analisis Little Nightmare</a></h3>
+												</div>
+											</li>
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-16.jpg"
+														alt="imagen submenu">
+												</div>
+
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link"
+															href="#">Gameplay WWE 2k24</a>
+													</h3>
+												</div>
+											</li>
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-17.jpg"
+														alt="imagen submenu">
+												</div>
+
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title">
+														<a class="carousel-link" href="#">Red Dead Redemption 2 </a>
+													</h3>
+												</div>
+											</li>
+											<!-- Elemento del carousel -->
+											<li class="carousel-items">
+												<!-- imagen -->
+												<div class="carousel-container-img">
+
+													<img class="carousel-img" src="./assets/img/game-18.jpg"
+														alt="imagen submenu">
+												</div>
+
+												<!-- Título -->
+												<div class="carousel-detail">
+													<h3 class="carousel-title"><a class="carousel-link" href="#">Trailer
+															Riders Republic</a></h3>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<!-- Buscador -->
+						<form class="navbar-form d-flex ">
+							<input class="search-input" type="text" name="search" placeholder="Buscar">
+							<div class="navbar-btn">
+								<a href="#" class="navbar-button">
+									<i class="fas fa-magnifying-glass"></i>
+								</a>
+							</div>
+						</form>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Marquesina -->
+	<section id="marquee">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="navbarquee bg-dark-subtle overflow-hidden d-flex align-items-center">
+						<h3 class="ms-1">NO TE LO PIERDAS</h3>
+						<div class="marquee-container flex-grow-1">
+							<div class="marquee-content d-flex text-nowrap ">
+								<div class="col-auto">
+									<h4>
+										<a href="#">La nueva PS5</a>
+									</h4>
+								</div>
+								<div class="col-auto">
+									<h4>
+										<a href="#">The Last of Us 1 Remake</a>
+									</h4>
+								</div>
+								<div class="col-auto">
+									<h4>
+										<a href="#">Análisis Elden Ring</a>
+									</h4>
+								</div>
+								<div class="col-auto">
+									<h4>
+										<a href="#">Trailer FC24</a>
+									</h4>
+								</div>
+								<div class="col-auto">
+									<h4>
+										<a href="#">Análisis Disney SpeedStorm</a>
+									</h4>
+								</div>
+								<div class="col-auto">
+									<h4>
+										<a href="#">Análisis GTA 6</a>
+									</h4>
+								</div>
+								<div class="col-auto">
+									<h4>
+										<a href="#">Gameplay Gotham Nights</a>
+									</h4>
+								</div>
+								<div class="col-auto">
+									<h4>
+										<a href="#">Análisis UFC 4</a>
+									</h4>
+								</div>
+								<div class="col-auto">
+									<h4>
+										<a href="#">Gameplay Forza Horizon 5</a>
+									</h4>
+								</div>
+								<div class="col-auto">
+									<h4>
+										<a href="#">Goty Its Take Two</a>
+									</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- Slider -->
+	<section id="slider">
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-12 col-lg-3 d-flex flex-row flex-lg-column justify-content-lg-between">
+					<div class="position-relative overflow-hidden p-0">
+						<img class="img-fluid w-100 h-100" src="./assets/img/slider-1.jpg" alt="Imagen slider">
+						<div class="overlay">
+							<!-- Puntuación -->
+							<div class="carousel-rating">
+								<div class="container-rating">
+									<div class="container-border">
+										<span class="container-mark">6</span>
+									</div>
+								</div>
+							</div>
+							<span class="category badge text-uppercase mb-2">JUEGOS</span>
+							<div class="title mb-3">
+								<h3 class="h5 text-white">MEJORES JUEGOS DE 2024</h3>
+							</div>
+						</div>
+					</div>
+					<div class="position-relative overflow-hidden p-0">
+						<img class="img-fluid w-100 h-100" src="./assets/img/slider-2.jpg" alt="Imagen slider">
+						<div class="overlay">
+							<span class="category badge text-uppercase mb-2">JUEGOS</span>
+							<div class="title">
+								<h3 class="h5 text-white">REVIEW THE LAST OF US 1 REMAKE</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="position-relative overflow-hidden p-0">
+						<img class="img-fluid w-100 object-fit-cover" src="./assets/img/slider-3.webp" alt="Imagen slider">
+						<div class="overlay">
+							<span class="category badge text-uppercase mb-2">JUEGOS</span>
+							<div class="title">
+								<h3 class="h4 text-white">MICROSOFT COMPRA ACTIVISION</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 d-flex flex-row flex-lg-column justify-content-lg-between">
+					<div class="position-relative overflow-hidden p-0">
+						<img class="img-fluid w-100 h-100 object-fit-cover" src="./assets/img/slider-4.jpg" alt="Imagen slider">
+						<div class="overlay">
+							<span class="category badge text-uppercase mb-2">JUEGOS</span>
+							<div class="title mb-3">
+								<h3 class="h5 text-white">REVIEW BATTLEFIELD 2042</h3>
+							</div>
+						</div>
+					</div>
+					<div class="position-relative overflow-hidden p-0">
+						<img class="img-fluid w-100 h-100 object-fit-cover" src="./assets/img/slider-5.png" alt="Imagen slider">
+						<div class="overlay">
+							<span class="category badge text-uppercase mb-2">JUEGOS</span>
+							<div class="title">
+								<h3 class="h5 text-white">MEJORES SKINS DE VALORANT</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+
+	<!-- Mejores momentos -->
+	<section id="highlights">
+		<div class="container my-4">
+			<div class="row">
+				<div class="col-12">
+					<div class="navbar bg-navbar pb-0">
+						<h3 class="ms-2 text-center">MEJORES MOMENTOS DE LOS JUEGOS</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+				<div class="col col-md-6 col-lg-4">
+					<div class="card">
+						<img src="./assets/img/highlight-2.jpg" class="card-img-top" alt="Imagen the last of us">
+						<div class="card-category">JUEGOS</div>
+						<div class="card-body">
+							<h5 class="card-title">MEJOR JUEGO DE TODOS LOS TIEMPOS</h5>
+							<div class="row card-meta mb-3">
+								<div class="col">
+									<span class="author">VICTOR</span>
+								</div>
+								<div class="col text-end">
+									<span>SEPTIEMBRE 21, 2024</span>
+								</div>
+							</div>
+							<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
+								neque cum illum
+								harum cupiditate error odio, iure vero voluptate voluptatibus ad autem libero
+								reprehenderit, quaerat
+								laboriosam accusamus doloremque omnis. Rem?</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div>
+									<span class="me-3"><i class="fas fa-eye"></i> 1532</span>
+									<span><i class="fas fa-message"></i> 3</span>
+								</div>
+								<a href="#" class="btn btn-outline-success btn-hover">Leer Más</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-md-6 col-lg-4">
+					<div class="card position-relative">
+						<img src="./assets/img/highlight-1.jpg" class="card-img-top" alt="Imagen the last of us">
+						<div class="card-category">JUEGOS</div>
+						<div class="card-body">
+							<h5 class="card-title">GOD OF WAR - EL VERDADERO NOMBRE DE ATREUS</h5>
+							<div class="row card-meta mb-3">
+								<div class="col">
+									<span class="author">VICTOR</span>
+								</div>
+								<div class="col text-end">
+									<span>SEPTIEMBRE 21, 2024</span>
+								</div>
+							</div>
+							<p class="card-text">En relación con esta mitología, Atreus, el hijo de Kratos, tiene mucho
+								que decir.
+								Menuda cara se nos quedó cuando supimos que el verdadero nombre del chico era Loki, dios
+								del engaño y
+								las travesuras. Lorem...</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div>
+									<span class="me-3"><i class="fas fa-eye"></i> 1532</span>
+									<span><i class="fas fa-message"></i> 3</span>
+								</div>
+								<a href="#" class="btn btn-outline-success">Leer Más</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-md-6 col-lg-4">
+					<div class="card position-relative">
+						<img src="./assets/img/highlight-3.jpg" class="card-img-top" alt="Imagen the last of us">
+						<div class="card-category">JUEGOS</div>
+						<div class="card-body">
+							<h5 class="card-title">FINAL - THE LAST OF US NO DEFRAUDA</h5>
+							<div class="row card-meta mb-3">
+								<div class="col">
+									<span class="author">VICTOR</span>
+								</div>
+								<div class="col text-end">
+									<span>SEPTIEMBRE 21, 2024</span>
+								</div>
+							</div>
+							<p class="card-text">Un final tan desolador y con consecuencias tan brutales que nos dejó
+								muy
+								sorprendidos. Que importantes son la moralidad y la ética dentro de una buena historia,
+								la historia de
+								Joel y Eli, fue una de las mejores historias jamás contadas por la empresa de ...</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div>
+									<span class="me-3"><i class="fas fa-eye"></i> 1532</span>
+									<span><i class="fas fa-message"></i> 3</span>
+								</div>
+								<a href="#" class="btn btn-outline-success">Leer Más</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Últimos videos -->
+	<section id="videos">
+		<div class="container my-5">
+			<div class="row">
+				<div class="col-12">
+					<div class="navbar bg-navbar pb-0 mb-5">
+						<h3 class="ms-2">ÚLTIMOS VIDEOS</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-lg-7 col-xxl-8">
+					<div class="ratio ratio-16x9">
+						<iframe loading="lazy" width="560" height="315"
+							src="https://www.youtube.com/embed/reABCMNGM3w?si=WKUN0o73CCV26yBa"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+					<div class="card-body border-bottom mb-5">
+						<h5 class="card-title card-title-iframe mt-4">TRAILER CYBERPUNK 2077 PHANTOM LIBERTY</h5>
+						<div class="row card-meta my-3">
+							<div class="col">
+								<span class="author me-2">EUROGAMERSSPAIN </span>
+								<span class="me-2"><i class="fas fa-eye"></i> 45532</span>
+								<span><i class="fas fa-message"></i> 53</span>
+							</div>
+							<div class="col text-end">
+								<span>ABRIL , 2023</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-5 col-xxl-4">
+					<!-- Tarjetas del iframe -->
+					<div class="card-body border-bottom mb-4">
+						<div class="row justify-content-center card-meta mb-3">
+							<div class="col-9">
+								<a href="#" class="card-title">Top 10 mejores juegos 2024</a>
+								<div class="row card-meta mb-3">
+									<div class="col-4">
+										<span class="author">EUROGAMERSPAIN</span>
+									</div>
+									<div class="col text-end">
+										<span>ENERO 27, 2024</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<img class="w-100" src="./assets/img/latest-video-1.jpeg" alt="Imagen de God of war">
+							</div>
+						</div>
+					</div>
+					<!-- Tarjetas del iframe -->
+					<div class="card-body border-bottom mb-4">
+						<div class="row justify-content-center card-meta mb-3">
+							<div class="col-9">
+								<a href="#" class="card-title">Trailer Fifa 23</a>
+								<div class="row card-meta mb-3">
+									<div class="col-4">
+										<span class="author">EA</span>
+									</div>
+									<div class="col text-end">
+										<span>MARZO 13, 2024</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<img class="w-100" src="./assets/img/latest-video-2.png" alt="Imagen de fifa 23">
+							</div>
+						</div>
+					</div>
+					<!-- Tarjetas del iframe -->
+					<div class="card-body border-bottom mb-4">
+						<div class="row justify-content-center card-meta mb-3">
+							<div class="col-9">
+								<a href="#" class="card-title">Trailer Elden Ring</a>
+								<div class="row card-meta mb-3">
+									<div class="col-7">
+										<span class="author">FROM SOFTWARE</span>
+									</div>
+									<div class="col text-start">
+										<span>JUNIO 11,2024</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<img class="w-100" src="./assets/img/latest-video-3.gif" alt="Imagen de Elden ring">
+							</div>
+						</div>
+					</div>
+					<!-- Tarjetas del iframe -->
+					<div class="card-body border-bottom mb-4">
+						<div class="row justify-content-center card-meta mb-3">
+							<div class="col-9">
+								<a href="#" class="card-title">Trailer Howarts Legacy </a>
+								<div class="row card-meta mb-3">
+									<div class="col-6">
+										<span class="author">WARNER BROS</span>
+									</div>
+									<div class="col text-end">
+										<span>AGOSTO 11, 2024</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<img class="w-100" src="./assets/img/latest-video-4.webp" alt="Imagen Howarts legacy">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Carousel -->
+			<div id="carousel" class="swiper-container bg-navbar" navigation="true">
+				<div class="swiper-wrapper">
+					<!-- 18 SLIDERS -->
+					<div class="swiper-slide d-flex justify-content-center align-self-center my-5 ">
+						<div class=" d-flex justify-content-center">
+							<div class="position-relative">
+								<div class="rating">
+									<span>7</span>
+								</div>
+								<img src="./assets/img/carrusel-games-1.jpg" alt="Foto de un cliente"
+									class="img-thumbnail w-100" loading="lazy">
+								<p>JUEGOS</p>
+								<h4>Borderlands: The pre-Sequel</h4>
+							</div>
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-self-center my-5">
+						<div class=" d-flex justify-content-center">
+							<div class="position-relative">
+								<div class="rating">
+									<span>8</span>
+								</div>
+								<img src="./assets/img/carrusel-games-2.jpg" alt="Foto de un cliente"
+									class="img-thumbnail w-100" loading="lazy">
+								<p>JUEGOS</p>
+								<h4>Ace Combat Infinity Review</h4>
+							</div>
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-self-center my-5">
+						<div class=" d-flex justify-content-center">
+							<div class="position-relative">
+								<div class="rating">
+									<span>9</span>
+								</div>
+								<img src="./assets/img/carrusel-games-3.jpg" alt="Foto de un cliente"
+									class="img-thumbnail w-100" loading="lazy">
+								<p>JUEGOS</p>
+								<h4>The Walking Dead: Season Two Episode 2</h4>
+							</div>
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-self-center my-5">
+						<div class=" d-flex justify-content-center">
+							<div class="position-relative">
+								<div class="rating">
+									<span>5</span>
+								</div>
+								<img src="./assets/img/carrusel-games-4.jpg" alt="Foto de un cliente"
+									class="img-thumbnail w-100" loading="lazy">
+								<p>JUEGOS</p>
+								<h4> Sherlock Holmes : Crimes & Punishments</h4>
+							</div>
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-self-center my-5">
+						<div class=" d-flex ">
+							<div class="position-relative">
+								<div class="rating">
+									<span>7</span>
+								</div>
+								<img src="./assets/img/carrusel-games-1.jpg" alt="Foto de un cliente"
+									class="img-thumbnail w-100" loading="lazy">
+								<p>JUEGOS</p>
+								<h4>Borderlands: The pre-Sequel</h4>
+							</div>
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-self-center my-5">
+						<div class=" d-flex ">
+							<div class="position-relative">
+								<div class="rating">
+									<span>7</span>
+								</div>
+								<img src="./assets/img/carrusel-games-2.jpg" alt="Foto de un cliente"
+									class="img-thumbnail w-100" loading="lazy">
+								<p>JUEGOS</p>
+								<h4>Borderlands: The pre-Sequel</h4>
+							</div>
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-self-center my-5">
+						<div class=" d-flex ">
+							<div class="position-relative">
+								<div class="rating">
+									<span>7</span>
+								</div>
+								<img src="./assets/img/carrusel-games-3.jpg" alt="Foto de un cliente"
+									class="img-thumbnail w-100" loading="lazy">
+								<p>JUEGOS</p>
+								<h4>Borderlands: The pre-Sequel</h4>
+							</div>
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-self-center my-5">
+						<div class=" d-flex ">
+							<div class="position-relative">
+								<div class="rating">
+									<span>7</span>
+								</div>
+								<img src="./assets/img/carrusel-games-4.jpg" alt="Foto de un cliente"
+									class="img-thumbnail w-100" loading="lazy">
+								<p>JUEGOS</p>
+								<h4>Borderlands: The pre-Sequel</h4>
+							</div>
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+					</div>
+				</div>
+				<div class="autoplay-progress">
+					<svg viewBox="0 0 48 48">
+						<circle cx="24" cy="24" r="20"></circle>
+					</svg>
+					<span></span>
+				</div>
+				<div class="swiper-scrollbar"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Noticias -->
+	<main id="news">
+		<div class="container mt-5">
+			<!-- Contenido central -->
+			<div class="row">
+				<div class="col-lg-8">
+					<!-- Noticias -->
+					<div class="row">
+						<div class="col-12">
+							<div class="navbar bg-navbar pb-0 mb-5">
+								<h3 class="ms-2">NOTICIAS</h3>
+							</div>
+						</div>
+					</div>
+					<div class="container-item">
+						<!-- Tarjeta -->
+						<div class="col-12">
+							<div class="card d-xl-flex flex-xl-row pb-5 border-0 border-bottom">
+								<div class="col-12 col-xl-6 position-relative">
+									<img src="./assets/img/news-1.jpg" class="img-fluid w-100 h-100"
+										alt="Imagen the last of us">
+									<div class="card-category">NOTICIAS</div>
+								</div>
+								<div class="card-body col-12 col-xl-6 p-xl-0 ms-xl-5">
+									<h5 class="card-title">NUEVAS FILTRACIONES GTA 6</h5>
+									<div class="row card-meta mb-3">
+										<div class="col">
+											<span class="author">VICTOR</span>
+										</div>
+										<div class="col text-end">
+											<span>FEBRERO 21, 2024</span>
+										</div>
+									</div>
+									<p class="card-text">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto neque cum
+										illum harum
+										cupiditate error odio, iure vero voluptate voluptatibus ad autem libero
+										reprehenderit, quaerat
+										laboriosam accusamus doloremque omnis. Rem?
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div>
+											<span class="me-3"><i class="fas fa-eye"></i> 7568</span>
+											<span><i class="fas fa-message"></i> 13</span>
+										</div>
+										<a href="#" class="btn btn-outline-success btn-hover">Leer Más</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Posts links -->
+						<div class="col-12 mt-4 d-lg-flex flex-lg-wrap">
+							<div class="col-12 col-lg-6">
+								<div class="card-body mb-4">
+									<div class="row justify-content-center card-meta mb-3">
+										<div class="col-9">
+											<a href="#" class="card-title">Lanzamientos mas esperados para 2024</a>
+											<div class="row card-meta mb-3">
+												<div class="col-3">
+													<span class="author">ANDRES</span>
+												</div>
+												<div class="col ">
+													<span>FEBRERO 21, 2024</span>
+												</div>
+											</div>
+										</div>
+										<div class="col order-first">
+											<img class="w-100" src="./assets/img/news-2.jpg" alt="Imagen de God of war">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6">
+								<div class="card-body mb-4">
+									<div class="row justify-content-center card-meta mb-3">
+										<div class="col-9">
+											<a href="#" class="card-title">Detalles alucinantes de Red Dead Redemption
+												2</a>
+											<div class="row card-meta mb-3">
+												<div class="col-3">
+													<span class="author">ANDRES</span>
+												</div>
+												<div class="col ">
+													<span>ABRIL 10, 2024</span>
+												</div>
+											</div>
+										</div>
+										<div class="col order-first">
+											<img class="w-100" src="./assets/img/news-3.jpg"
+												alt="Imagen de Red dead Redemption 2">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6">
+								<div class="card-body mb-4">
+									<div class="row justify-content-center card-meta mb-3">
+										<div class="col-9">
+											<a href="#" class="card-title">Especificaciones de la PS5 confirmadas</a>
+											<div class="row card-meta mb-3">
+												<div class="col-3">
+													<span class="author">ANDRES</span>
+												</div>
+												<div class="col">
+													<span>MAYO 11, 2024</span>
+												</div>
+											</div>
+										</div>
+										<div class="col order-first">
+											<img class="w-100" src="./assets/img/news-4.jpg" alt="Imagen de Elden ring">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6">
+								<div class="card-body mb-4">
+									<div class="row justify-content-center card-meta mb-3">
+										<div class="col-9">
+											<a href="#" class="card-title">Consigue más FPS en Valorant </a>
+											<div class="row card-meta mb-3">
+												<div class="col-3">
+													<span class="author">ANDRES</span>
+												</div>
+												<div class="col">
+													<span>JULIO 28, 2024</span>
+												</div>
+											</div>
+										</div>
+										<div class="col order-first">
+											<img class="w-100" src="./assets/img/news-5.jpg"
+												alt="Imagen Howarts legacy">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Juegos -->
+					<div id="games" class="row">
+						<div class="col-12">
+							<div class="navbar bg-navbar pb-0 mb-5">
+								<h3 class="ms-2">JUEGOS</h3>
+							</div>
+						</div>
+					</div>
+					<div class="container-item">
+						<div class="row g-4">
+							<div class="col-lg-6">
+								<div class="card position-relative border-0">
+									<img src="./assets/img/main-game-1.jpg" class="img-fluid w-100"
+										alt="Imagen the last of us">
+									<div class="card-category">JUEGOS</div>
+									<h5 class="card-title-news position-absolute"> ANALISIS DEL NUEVO FARCRY 6</h5>
+									<div class="rating position-absolute">
+										<span class="position-absolute">7</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="card position-relative border-0">
+									<img src="./assets/img/main-game-2.jpg" class="img-fluid w-100"
+										alt="Imagen the last of us">
+									<div class="card-category">REVIEW</div>
+									<h5 class="card-title-news position-absolute"> COMO ES LA PS5 POR DENTRO -</h5>
+									<div class="rating position-absolute">
+										<span class="position-absolute">7.5</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="card position-relative border-0">
+									<img src="./assets/img/main-game-3.jpg" class="img-fluid w-100"
+										alt="Imagen the last of us">
+									<div class="card-category">REVIEW</div>
+									<h5 class="card-title-news position-absolute"> COMO ES LA XBOX POR DENTRO</h5>
+									<div class="rating position-absolute">
+										<span class="position-absolute">8</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="card position-relative border-0">
+									<img src="./assets/img/main-game-4.jpg" class="img-fluid w-100"
+										alt="Imagen the last of us">
+									<div class="card-category">REVIEW</div>
+									<h5 class="card-title-news position-absolute"> COMO ES LA SWITCH POR DENTRO</h5>
+									<div class="rating position-absolute">
+										<span class="position-absolute">9.7</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Últimos Artículos -->
+					<div id="reviews" class="row">
+						<div class="col-12">
+							<div class="navbar bg-navbar pb-0 mb-5">
+								<h3 class="ms-2">ÚLTIMOS ARTÍCULOS</h3>
+							</div>
+						</div>
+					</div>
+					<div class="container-item mb-4">
+						<div class="row row-cols-1 row-cols-md-4 g-4">
+							<div class="col-12 col-md-12 col-lg-6 border-bottom ">
+								<div class="card position-relative border-0">
+									<img src="./assets/img/main-game-1.jpg" class="card-img-top"
+										alt="Imagen the last of us">
+									<div class="card-category">JUEGOS</div>
+									<div class="card-body">
+										<h5 class="card-title">ANALISIS DEL NUEVO FARCRY 6</h5>
+										<div class="row card-meta mb-3">
+											<div class="col">
+												<span class="author">ANDRES</span>
+											</div>
+											<div class="col text-end">
+												<span>ENERO 21, 2024</span>
+											</div>
+										</div>
+										<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Architecto neque cum
+											illum
+											harum cupiditate error odio, iure vero voluptate voluptatibus ad autem
+											libero reprehenderit,
+											quaerat
+											laboriosam accusamus doloremque omnis. Rem?</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<div>
+												<span class="me-3"><i class="fas fa-eye"></i> 1532</span>
+												<span><i class="fas fa-message"></i> 3</span>
+											</div>
+											<a href="#" class="btn btn-outline-success btn-hover">Leer Más</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-12 col-lg-6 border-bottom">
+								<div class="card position-relative border-0">
+									<img src="./assets/img/latest-2.jpg" class="card-img-top"
+										alt="Imagen the last of us">
+									<div class="card-category">JUEGOS</div>
+									<div class="card-body">
+										<h5 class="card-title">MEJOR JUEGO DE TODOS LOS TIEMPOS</h5>
+										<div class="row card-meta mb-3">
+											<div class="col">
+												<span class="author">PEPE</span>
+											</div>
+											<div class="col text-end">
+												<span>JULIO 11, 2024</span>
+											</div>
+										</div>
+										<p class="card-text">Lorem ipsum dolor, Harum aliquam qui in earum, eum placeat
+											voluptatibus
+											explicabo, minima autem fugit dolore nobis? Optio est, modi aliquam ullam ut
+											soluta!</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<div>
+												<span class="me-3"><i class="fas fa-eye"></i> 1532</span>
+												<span><i class="fas fa-message"></i> 3</span>
+											</div>
+											<a href="#" class="btn btn-outline-success btn-hover">Leer Más</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-12 col-lg-6 border-bottom">
+								<div class="card position-relative border-0">
+									<img src="./assets/img/main-game-2.jpg" class="card-img-top"
+										alt="Imagen the last of us">
+									<div class="card-category">JUEGOS</div>
+									<div class="card-body">
+										<h5 class="card-title">COMO ES LA PS5 POR DENTRO</h5>
+										<div class="row card-meta mb-3">
+											<div class="col">
+												<span class="author">VICTOR</span>
+											</div>
+											<div class="col text-end">
+												<span>AGOSTO 23, 2024</span>
+											</div>
+										</div>
+										<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+											Nemo doloremque
+											aspernatur qui deleniti maiores recusandae, itaque aliquid et in! Ipsam
+											inventore tempore
+											voluptatum iure incidunt quo molestiae a labore sed.</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<div>
+												<span class="me-3"><i class="fas fa-eye"></i> 1532</span>
+												<span><i class="fas fa-message"></i> 3</span>
+											</div>
+											<a href="#" class="btn btn-outline-success btn-hover">Leer Más</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-12 col-lg-6 border-bottom">
+								<div class="card position-relative border-0">
+									<img src="./assets/img/latest-4.jpg" class="card-img-top"
+										alt="Imagen the last of us">
+									<div class="card-category">JUEGOS</div>
+									<div class="card-body">
+										<h5 class="card-title">TRAILER OVERWATCH 2</h5>
+										<div class="row card-meta mb-3">
+											<div class="col">
+												<span class="author">ANDRES</span>
+											</div>
+											<div class="col text-end">
+												<span>DICIEMBRE 23, 2024</span>
+											</div>
+										</div>
+										<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+											Quaerat ad eaque
+											deleniti quas, magni temporibus corrupti doloribus voluptatibus a dolorum
+											omnis. Veritatis non
+											possimus, aspernatur ut praesentium blanditiis ipsam vitae.</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<div>
+												<span class="me-3"><i class="fas fa-eye"></i> 1532</span>
+												<span><i class="fas fa-message"></i> 3</span>
+											</div>
+											<a href="#" class="btn btn-outline-success btn-hover">Leer Más</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="btn btn-light w-100 border-black">LEER MÁS</button>
+				</div>
+				<!-- Aside lateral -->
+				<div class="col-12 col-lg-4">
+					<aside id="aside" class="aside mt-4 mt-lg-0">
+						<!-- Formulario -->
+						<div class="row">
+							<div class="col-12">
+								<div class="navbar bg-navbar pb-0 mb-5">
+									<h3 class="ms-2">INICIAR SESIÓN</h3>
+								</div>
+							</div>
+						</div>
+						<div class="container-aside">
+							<form class="row g-2">
+								<div class="input-group input-group-lg mb-3">
+									<span class="input-group-text fas fa-user" id="addon"></span>
+									<input type="text" class="form-control form-control-lg" id="exampleInputEmail1"
+										aria-describedby="addon" placeholder="Usuario" required>
+								</div>
+								<div class="input-group input-group-lg mb-3">
+									<span class="input-group-text fas fa-asterisk" id="addon"></span>
+									<input type="password" class="form-control form-control-lg" id="Password"
+										aria-describedby="passwordHelpBlock" placeholder="Contraseña" required>
+									<div id="passwordHelpBlock" class="form-text">
+										Su contraseña debe tener entre 8 y 20 caracteres, contener letras y números, y
+										no debe contener
+										espacios, caracteres especiales ni emoji. </div>
+								</div>
+								<div class="mb-3 form-check">
+									<input type="checkbox" class="form-check-input" id="Check">
+									<label class="form-check-label" for="Check">Recuerdamelo</label>
+								</div>
+								<button type="submit" class="btn btn-success w-100">Iniciar sesión</button>
+								<a href="#" class="link-success">Registrate</a>
+								<a href="#" class="link-success">Recuperar contraseña</a>
+							</form>
+						</div>
+						<!-- Redes sociales -->
+						<div id="social" class="container-aside p-2">
+							<div class="row bg-twitter mb-3">
+								<div class="col-2 my-auto">
+									<i class="fab fa-twitter"></i>
+								</div>
+								<div class="col-10 d-flex justify-content-around align-items-center">
+									<a href="#"> 26.000 </a>
+									<span> Seguidores </span>
+								</div>
+							</div>
+							<div class="row bg-facebook mb-3">
+								<div class="col-2 my-auto">
+									<i class="fab fa-facebook-f"></i>
+								</div>
+								<div class="col-10 d-flex justify-content-around align-items-center">
+									<a href="#"> 15.000 </a>
+									<span> Seguidores </span>
+								</div>
+							</div>
+							<div class="row bg-youtube mb-3">
+								<div class="col-2 my-auto">
+									<i class="fab fa-youtube"></i>
+								</div>
+								<div class="col-10 d-flex justify-content-around align-items-center">
+									<a href="#"> 330.000 </a>
+									<span> Seguidores </span>
+								</div>
+							</div>
+							<div class="row bg-instagram mb-3">
+								<div class="col-2 my-auto">
+									<i class="fab fa-instagram"></i>
+								</div>
+								<div class="col-10 d-flex justify-content-around align-items-center">
+									<a href="#"> 22.000 </a>
+									<span> Seguidores </span>
+								</div>
+							</div>
+							<div class="row bg-linkedin mb-3">
+								<div class="col-2 my-auto">
+									<i class="fab fa-linkedin-in"></i>
+								</div>
+								<div class="col-10 d-flex justify-content-around align-items-center">
+									<a href="#"> 16.140 </a>
+									<span> Seguidores </span>
+								</div>
+							</div>
+						</div>
+						<!-- Tweets -->
+						<div class="container-aside p-2">
+							<div class="row bg-twitter">
+								<div class="col-12 d-flex align-items-center mt-4">
+									<i class="tweet fab fa-twitter me-2"></i>
+									<span> ULTIMOS TWEETS</span>
+								</div>
+								<div class="col-12 mt-4 mb-3">
+									<p>@AndresZc.pro echad un vistazo a mi último proyecto en <a
+											href="https://www.linkedin.com/posts/andr%C3%A9s-fern%C3%A1ndez-cano-3455a4302_me-alegra-compartir-que-he-trabajado-en-este-activity-7197136207238033408-78o3?utm_source=combined_share_message&utm_medium=member_desktop"
+											target="_blank">mi linkedin</a></p>
+								</div>
+							</div>
+
+						</div>
+						<!-- Recientes, popular, comentarios -->
+						<div id="category" class="row">
+							<div class="col-12">
+								<div class="navbar bg-navbar pb-0 mt-3 mb-5 justify-content-start ">
+									<h3 class="ms-2 col-3 col-md-auto"><a href="#">RECIENTE</a></h3>
+									<h3 class="ms-2 col-3 col-md-auto no-active"><a href="#">POPULAR</a></h3>
+									<h3 class="ms-2 col-3 col-md-auto no-active"><a href="#">COMENTARIOS</a></h3>
+								</div>
+							</div>
+						</div>
+						<div class="container-aside p-2">
+							<div class="row mb-4">
+								<div class="col-12">
+									<div class="card d-flex flex-row  border-0">
+										<div class="col-3 col-lg-5 position-relative align-content-center">
+											<img src="./assets/img/recent-1.jpg" class="img-fluid w-100 h-100"
+												alt="Imagen the last of us">
+										</div>
+										<div class="card-body col-12 col-lg-12 p-lg-0 ms-3">
+											<h5 class="card-title"><a href="#">Mejor juego del año</a></h5>
+											<div class="row card-meta mt-4">
+												<div
+													class="col col-md-4 col-lg-12 justify-content-start align-self-center">
+													<span class="author">ANDRES</span>
+												</div>
+												<div class="col-8 col-lg-12 d-flex justify-content-start">
+													<div class="span-items">
+														<span class="me-3"><i class="fas fa-eye"></i> 7568</span>
+														<span><i class="fas fa-message"></i> 13</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row mb-4">
+								<div class="col-12">
+									<div class="card d-flex flex-row  border-0">
+										<div class="col-3 col-lg-5 position-relative align-content-center">
+											<img src="./assets/img/recent-2.jpg" class="img-fluid w-100 h-100"
+												alt="Imagen the last of us">
+										</div>
+										<div class="card-body col-12 col-lg-12 p-lg-0 ms-3">
+											<h5 class="card-title"><a href="#">Analisis GTA VI</a></h5>
+											<div class="row card-meta mt-4">
+												<div
+													class="col col-md-4 col-lg-12 justify-content-start align-self-center">
+													<span class="author">ANDRES</span>
+												</div>
+												<div class="col-8 col-lg-12 d-flex justify-content-start">
+													<div class="span-items">
+														<span class="me-3"><i class="fas fa-eye"></i> 17368</span>
+														<span><i class="fas fa-message"></i> 413</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row mb-4">
+								<div class="col-12">
+									<div class="card d-flex flex-row  border-0">
+										<div class="col-3 col-lg-5 position-relative align-content-center">
+											<img src="./assets/img/recent-3.jpg" class="img-fluid w-100 h-100"
+												alt="Imagen the last of us">
+										</div>
+										<div class="card-body col-12 col-lg-12 p-lg-0 ms-3">
+											<h5 class="card-title"><a href="#">Analisis WWE 2K24</a></h5>
+											<div class="row card-meta mt-4">
+												<div
+													class="col col-md-4 col-lg-12 justify-content-start align-self-center">
+													<span class="author">ANDRES</span>
+												</div>
+												<div class="col-8 col-lg-12 d-flex justify-content-start">
+													<div class="span-items">
+														<span class="me-3"><i class="fas fa-eye"></i> 16523</span>
+														<span><i class="fas fa-message"></i> 23</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row mb-4">
+								<div class="col-12">
+									<div class="card d-flex flex-row  border-0">
+										<div class="col-3 col-lg-5 position-relative align-content-center">
+											<img src="./assets/img/recent-4.jpg" class="img-fluid w-100 h-100"
+												alt="Imagen the last of us">
+										</div>
+										<div class="card-body col-12 col-lg-12 p-lg-0 ms-3">
+											<h5 class="card-title"><a href="#">Analisis Tekken 8</a></h5>
+											<div class="row card-meta mt-4">
+												<div
+													class="col col-md-4 col-lg-12 justify-content-start align-self-center">
+													<span class="author">ANDRES</span>
+												</div>
+												<div class="col-8 col-lg-12 d-flex justify-content-start">
+													<div class="span-items">
+														<span class="me-3"><i class="fas fa-eye"></i> 24516</span>
+														<span><i class="fas fa-message"></i> 233</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="card d-flex flex-row  border-0">
+										<div class="col-3 col-lg-5 position-relative align-content-center">
+											<img src="./assets/img/recent-5.jpg" class="img-fluid w-100 h-100"
+												alt="Imagen the last of us">
+										</div>
+										<div class="card-body col-12 col-lg-12 p-lg-0 ms-3">
+											<h5 class="card-title"><a href="#">Analisis Mortal Kombat 11</a></h5>
+											<div class="row card-meta mt-4">
+												<div
+													class="col col-md-4 col-lg-12 justify-content-start align-self-center">
+													<span class="author">ANDRES</span>
+												</div>
+												<div class="col-8 col-lg-12 d-flex justify-content-start">
+													<div class="span-items">
+														<span class="me-3"><i class="fas fa-eye"></i> 20560</span>
+														<span><i class="fas fa-message"></i> 78</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Ultimas reviews -->
+						<div id="ranking" class="row">
+							<div class="col-12">
+								<div class="navbar bg-navbar pb-0 mt-3 mb-5 justify-content-start ">
+									<h3 class="ms-0 p-1 p-lg-2 ms-lg-2 col col-lg-auto"><a href="#">ULTIMAS REVIEWS</a>
+									</h3>
+									<h3 class="ms-0 p-1 p-lg-2 ms-lg-2 col col-lg-auto no-active"><a href="#">MEJORES
+											REVIEWS</a></h3>
+								</div>
+							</div>
+						</div>
+						<div class="container-aside p-2">
+							<!-- Progressbar -->
+							<div class="row mb-4">
+								<div class="col-10">
+									<h4>Review de Elden Ring</h4>
+								</div>
+								<div class="col-2">
+									<span>7.5</span>
+								</div>
+								<div class="col-12">
+									<div class="progress bg-navbar" role="progressbar"
+										aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+										aria-valuemax="100">
+										<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+											style="width: 75%">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Progressbar -->
+							<div class="row mb-4">
+								<div class="col-10">
+									<h4>Review de CyberPunk 2077</h4>
+								</div>
+								<div class="col-2">
+									<span>10</span>
+								</div>
+								<div class="col-12">
+									<div class="progress bg-navbar" role="progressbar"
+										aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0"
+										aria-valuemax="100">
+										<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+											style="width: 100%">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Progressbar -->
+							<div class="row mb-4">
+								<div class="col-10">
+									<h4>Review de WWE 2K24</h4>
+								</div>
+								<div class="col-2">
+									<span>6.5</span>
+								</div>
+								<div class="col-12">
+									<div class="progress bg-navbar" role="progressbar"
+										aria-label="Animated striped example" aria-valuenow="65" aria-valuemin="0"
+										aria-valuemax="100">
+										<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+											style="width: 65%">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Progressbar -->
+							<div class="row mb-4">
+								<div class="col-10">
+									<h4>Review de Days Gone</h4>
+								</div>
+								<div class="col-2">
+									<span>8.1</span>
+								</div>
+								<div class="col-12">
+									<div class="progress bg-navbar" role="progressbar"
+										aria-label="Animated striped example" aria-valuenow="81" aria-valuemin="0"
+										aria-valuemax="100">
+										<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+											style="width: 81%">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Progressbar -->
+							<div class="row mb-4">
+								<div class="col-10">
+									<h4>Review de NFS Most Wanted</h4>
+								</div>
+								<div class="col-2">
+									<span>5.5</span>
+								</div>
+								<div class="col-12">
+									<div class="progress bg-navbar" role="progressbar"
+										aria-label="Animated striped example" aria-valuenow="55" aria-valuemin="0"
+										aria-valuemax="100">
+										<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+											style="width: 55%">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Progressbar -->
+							<div class="row">
+								<div class="col-10">
+									<h4>Review de Tekken 8</h4>
+								</div>
+								<div class="col-2">
+									<span>9</span>
+								</div>
+								<div class="col-12">
+									<div class="progress bg-navbar" role="progressbar"
+										aria-label="Animated striped example" aria-valuenow="90" aria-valuemin="0"
+										aria-valuemax="100">
+										<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+											style="width: 90%">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Pie de página -->
+	<footer id="footer">
+		<div class="container mt-4">
+			<div class="row">
+				<div class="col-12 col-lg-6 col-xl-4 mt-5">
+					<h4>SOBRE NOSOTROS</h4>
+					<p class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora quas
+						maxime delectus recusandae quam, ex at illo. Incidunt hic recusandae voluptate consequatur cum
+						voluptatem nisi tempore mollitia quia tempora?</p>
+					<h4>Etiquetas</h4>
+					<div class="col">
+						<span class="badge text-bg-success">Aventura</span>
+						<span class="badge text-bg-success">Lucha</span>
+						<span class="badge text-bg-success">Plataformas</span>
+						<span class="badge text-bg-success">RPG</span>
+						<span class="badge text-bg-success">Mundo Libre</span>
+						<span class="badge text-bg-success">Shooter</span>
+						<span class="badge text-bg-success">Survival</span>
+						<span class="badge text-bg-success">Terror</span>
+						<span class="badge text-bg-success">Lucha</span>
+						<span class="badge text-bg-success">Puzzle</span>
+						<span class="badge text-bg-success">Deporte</span>
+						<span class="badge text-bg-success">MOBA</span>
+						<span class="badge text-bg-success">Terror</span>
+						<span class="badge text-bg-success">Lucha</span>
+						<span class="badge text-bg-success">Puzzle</span>
+						<span class="badge text-bg-success">Deporte</span>
+						<span class="badge text-bg-success">MOBA</span>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 col-xl-4 mt-5 mt-lg-0 p-lg-5">
+					<h4>Post Populares</h4>
+					<div class="row my-4">
+						<div class="col-12">
+							<div class="card d-flex flex-row  border-0">
+								<div class="col-3 position-relative align-content-center">
+									<img src="./assets/img/popular-1.jpg" class="img-fluid w-100 h-100"
+										alt="Imagen the last of us">
+								</div>
+								<div class="card-body col-12 col-lg-9 p-lg-0 ms-3">
+									<h5 class="card-title"><a href="#">Mejor juego del año</a></h5>
+									<div class="row card-meta mt-4">
+										<div class="col-4 justify-content-start align-self-center">
+											<span class="author">ANDRES</span>
+										</div>
+										<div class="col-8 d-flex justify-content-start">
+											<div class="span-items">
+												<span class="me-3"><i class="fas fa-eye"></i> 7568</span>
+												<span><i class="fas fa-message"></i> 13</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mb-4">
+						<div class="col-12">
+							<div class="card d-flex flex-row  border-0">
+								<div class="col-3 position-relative align-content-center">
+									<img src="./assets/img/popular-2.jpg" class="img-fluid w-100 h-100"
+										alt="Imagen the last of us">
+								</div>
+								<div class="card-body col-12 col-lg-9 p-lg-0 ms-3">
+									<h5 class="card-title"><a href="#">Analisis GTA VI</a></h5>
+									<div class="row card-meta mt-4">
+										<div class="col-4 justify-content-start align-self-center">
+											<span class="author">ANDRES</span>
+										</div>
+										<div class="col-8 d-flex justify-content-start">
+											<div class="span-items">
+												<span class="me-3"><i class="fas fa-eye"></i> 17368</span>
+												<span><i class="fas fa-message"></i> 413</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mb-4">
+						<div class="col-12">
+							<div class="card d-flex flex-row  border-0">
+								<div class="col-3 position-relative align-content-center">
+									<img src="./assets/img/popular-3.jpg" class="img-fluid w-100 h-100"
+										alt="Imagen the last of us">
+								</div>
+								<div class="card-body col-12 col-lg-9 p-lg-0 ms-3">
+									<h5 class="card-title"><a href="#">Analisis WWE 2K24</a></h5>
+									<div class="row card-meta mt-4">
+										<div class="col-4 justify-content-start align-self-center">
+											<span class="author">ANDRES</span>
+										</div>
+										<div class="col-8 d-flex justify-content-start">
+											<div class="span-items">
+												<span class="me-3"><i class="fas fa-eye"></i> 16523</span>
+												<span><i class="fas fa-message"></i> 23</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="card d-flex flex-row  border-0">
+								<div class="col-3 position-relative align-content-center">
+									<img src="./assets/img/popular-4.jpg" class="img-fluid w-100 h-100"
+										alt="Imagen the last of us">
+								</div>
+								<div class="card-body col-12 col-lg-9 p-lg-0 ms-3">
+									<h5 class="card-title"><a href="#">Analisis Tekken 8</a></h5>
+									<div class="row card-meta mt-4">
+										<div class="col-4 justify-content-start align-self-center">
+											<span class="author">ANDRES</span>
+										</div>
+										<div class="col-8 d-flex justify-content-start">
+											<div class="span-items">
+												<span class="me-3"><i class="fas fa-eye"></i> 24516</span>
+												<span><i class="fas fa-message"></i> 233</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="post" class="col-12 col-lg-6 col-xl-4 mt-5">
+					<h4>Ultimo Post</h4>
+					<div class="position-relative">
+						<a href="#"><img src="./assets/img/slider-footer.jpg" alt="Foto de un cliente"
+								class="img-fluid w-100" loading="lazy"></a>
+						<p>JUEGOS</p>
+						<h6 class="text-white">TRAILER FIFA 23</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bg-copy mt-4">
+			<div class="container">
+				<div class="row p-2 p-lg-4">
+					<div class="col-12 col-lg-5 offset-lg-1 align-self-lg-center">
+						<p class="my-auto text-start">&copy; Copyright 2024. Todos los derechos reservados
+							<code>AndresZc</code>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./assets/JS/jquery-3.7.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="./assets/css/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
